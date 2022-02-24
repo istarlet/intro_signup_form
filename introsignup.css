@@ -23,13 +23,30 @@ img {
     max-width: 100%;
 }
 
-fs-16 {
-    font-size: 16px;
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
 }
+
+.pink-background {
+    background-image: url(/images/bg-intro-mobile.png);
+    background-color:hsl(0, 100%, 74%);
+}
+
+/* Font Styles */
 
 .poppins {
     font-family: 'Poppins', sans-serif;
 }
+
+fs-16 {
+    font-size: 16px;
+}
+
+/* Font Styles End */
 
 /* Footer Styles */
 .attribution { 
@@ -37,4 +54,16 @@ fs-16 {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Media Queries */
+@media screen and (min-width: 1100px) {
+    .container {
+        flex-direction: row;
+    }
+
+.pink-background {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+}
 }
