@@ -31,6 +31,11 @@ img {
     align-items: center;
 }
 
+.flex-container {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
 .pink-background {
     background-image: url(/images/bg-intro-mobile.png);
     background-color:hsl(0, 100%, 74%);
@@ -42,8 +47,21 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
-fs-16 {
+.fs-16 {
     font-size: 16px;
+    line-height: 26p;
+    font-weight: 500;
+}
+
+.fs-50 {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 55px;
+    letter-spacing: -0.52px;
+}
+
+.white {
+    color: #ffffff;
 }
 
 /* Font Styles End */
@@ -58,9 +76,14 @@ fs-16 {
 
 /* Media Queries */
 @media screen and (min-width: 1100px) {
-    .container {
-        flex-direction: row;
-    }
+
+.container {
+    flex-direction: row;
+}
+
+.flex-container {
+    text-align: left;
+}
 
 .pink-background {
     background-image: url(/images/bg-intro-desktop.png);
